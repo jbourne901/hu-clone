@@ -1,0 +1,59 @@
+.header {
+  color: white;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 100px;
+}
+
+.header-icon {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-img {
+  object-fit: contain;
+  height: 80px;
+}
+
+.header-label {
+  display: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+}
+
+.header-icon:hover .header-label {
+  display: inline-flex;
+}
+
+.header-icon-active .header-label {
+  display: inline-flex !important;
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
